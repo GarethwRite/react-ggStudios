@@ -5,7 +5,6 @@ class News extends React.Component {
 
   render() {
     return (
-
       <div class="formDiv">
         <label for="signUp" class="formLabel">sign up to our newsletter for updates<br></br> on upcoming games and apps</label>
         <form action="POST" class="newsletterForm">
@@ -22,8 +21,6 @@ class News extends React.Component {
           <input type="submit" value="Submit" />
         </form>
       </div>
-
-
     )
   }
 }

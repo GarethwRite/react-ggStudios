@@ -5,7 +5,6 @@ class Footer extends React.Component {
 
   render() {
     return (
-
       <div class="footer">
         <p class="followUs">follow us on</p>
         <div class="row">
@@ -29,7 +28,6 @@ class Footer extends React.Component {
           <p class="contactInfo">Contact info:<br></br>email: GGStudios@gmail.com</p>
           <p class="copyright">Ⓒ Copyright 2020<br></br>All rights reserved</p>
       </div>
-
     )
   }
 }
