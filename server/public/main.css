@@ -1,0 +1,230 @@
+html{
+ 
+  background-color: black;
+  position: relative;
+  
+}
+body{
+  margin: 0;
+  background-color: black;
+  position: relative;
+  min-height: 100vh;
+  background-image: url(http://localhost:3000/images/logo_transparent.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% -3rem;
+  background-attachment: fixed;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.transparentLogo{
+  width: 60%;
+  height: auto;
+  opacity: 0.4;
+  display: block;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 20vh;
+  z-index: 0;
+  
+
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Homepage Logo */
+/*-------------------------------------------------------------------------------------------------------*/
+.homeLogoDiv{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.homeLogoImg{
+ 
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Menu bar */
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------*/
+/* Footer */
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* footer positioning */
+.footer{
+  /* margin: 10px; */
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  right: 10px;
+  height: auto;
+  padding: 5px;
+  background-color:#974b32;
+  
+}
+/* copyright info */
+.copyright{
+  left: 0px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+ 
+}
+.contactInfo{
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  
+
+}
+/* footer social media links */
+.column {
+  text-align: center;
+  display: inline;
+  /* width: auto; */
+  padding: 5px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+    
+}
+.row{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.followUs{
+  text-align: center;
+  margin: 0px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------*/
+/* News page */
+/*----------------------------------------------------------------------------------------------*/
+  .newsletterForm{
+    border: solid;
+    border-color: #974b32;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 205px;
+    position: relative;
+    z-index: 1;
+  }
+  .formLabel{
+    font-family:'Orbitron', sans-serif; 
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+.formDiv{
+  margin: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+/*-----------------------------------------------------------------*/
+/* react menu bar */
+/*--------------------------------------------------------------------------*/
+
+.navbar{
+  background-color:#974b32;
+  height: 48px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-top: 8px;
+}
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+.nav-menu{
+  background-color:#974b32;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 10;
+}
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+}
+.nav-text{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-family:'Orbitron', sans-serif; 
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.nav-text a:hover {
+  background-color: black;
+}
+.nav-menu-items {
+  width: 100%;
+}
+.navbar-toggle {
+  background-color: #974b32;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+span {
+  margin-left: 16px;
+  
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+svg{
+  color: #f5f5f5;
+}
