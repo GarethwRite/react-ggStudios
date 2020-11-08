@@ -34,7 +34,7 @@ body{
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-/* Homepage Logo */
+/* Homepage */
 /*-------------------------------------------------------------------------------------------------------*/
 .homeLogoDiv{
   text-align: center;
@@ -49,90 +49,107 @@ body{
   height: auto;
 }
 
-/* ----------------------------------------------------------------------------------------------------*/
-/* Footer */
-/*------------------------------------------------------------------------------------------------------------*/
+.welcomeDiv{
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-/* footer positioning */
-.footer{
-  /* margin: 10px; */
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+.welcome {
+  font-family:'Orbitron', sans-serif; 
+  color: white;
+  text-align: center;
+}
+
+.welcomeH2 {
+  font-family:'Orbitron', sans-serif; 
+  color: white;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/* Mobile Apps Page */
+/*---------------------------------------------------------------------------------------------------*/
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  
+}
+
+.adContainer{
+  border: 8px solid #161c2e;
+  padding: 0;
+  display: flex;
+  margin: 50px;
+  margin-bottom: 0;
+}
+
+.adContainer2{
+  border: 8px solid #161c2e;
+  padding: 0;
+  display: flex;
+  margin: 50px;
+  margin-bottom: 0;
+}
+
+.adContainer3{
+
+  border: 8px solid #161c2e;
+  padding: 0;
+  display: flex;
+  margin: 50px;
+  margin-bottom: 0;
+}
+
+.AppAds {
   height: auto;
-  padding: 8px;
-  background-color:#974b32;
-  border: 2px solid #161c2e;
-  
-}
-/* copyright info */
-.copyright{
-  left: 0px;
-  text-align: left;
-  padding: 0px;
-  margin: 0px;
-  width: 200px;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
- 
-}
-.contactInfo{
-  text-align: right;
-  padding: 0px;
-  margin: 0px;
-  float: right;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  
-
-}
-/* footer social media links */
-.column {
-  text-align: center;
-  display: inline;
-  /* width: auto; */
-  padding: 5px;
-}
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-    
-}
-.row{
-  text-align: center;
-  width: 50%;
-  margin: auto;
+  width: 300px;
+  padding: 0;
+  margin: 0;
 }
 
-.followUs{
-  text-align: center;
-  margin: 0px;
-  font-family: 'Orbitron', sans-serif;
+.flex1{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; 
+}
+
+.appInfo{
+  font-family:'Orbitron', sans-serif; 
   color: white;
+  text-align: center;
+  width: 316px;
+  border:8px solid #161c2e; 
+  display: flex;
+  margin: 0 50px 50px 50px;
 }
 
 /*------------------------------------------------------------------------------------*/
 /* News page */
 /*----------------------------------------------------------------------------------------------*/
-  .newsletterForm{
+  
+.newsletterForm{
     border: solid;
     border-color: #974b32;
     padding: 10px;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 30px;
     width: 205px;
     position: relative;
     z-index: 1;
   }
+
   .formLabel{
     font-family:'Orbitron', sans-serif; 
     color: white;
     position: relative;
     z-index: 1;
   }
+
 .formDiv{
   margin: 20px;
   position: absolute;
@@ -152,11 +169,13 @@ body{
   padding-top: 8px;
   border: 2px solid #161c2e;
 }
+
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
 }
+
 .nav-menu{
   background-color:#974b32;
   width: 250px;
@@ -170,10 +189,12 @@ body{
   z-index: 10;
   border: 2px solid #161c2e;
 }
+
 .nav-menu.active{
   left: 0;
   transition: 350ms;
 }
+
 .nav-text{
   display: flex;
   justify-content: start;
@@ -182,6 +203,7 @@ body{
   list-style: none;
   height: 60px;
 }
+
 .nav-text a {
   text-decoration: none;
   color: #f5f5f5;
@@ -194,12 +216,15 @@ body{
   padding: 0 16px;
   border-radius: 4px;
 }
+
 .nav-text a:hover {
   background-color: #161c2e;
 }
+
 .nav-menu-items {
   width: 100%;
 }
+
 .navbar-toggle {
   background-color: #974b32;
   width: 100%;
@@ -208,15 +233,81 @@ body{
   justify-content: start;
   align-items: center;
 }
+
 span {
   margin-left: 16px;
-  
 }
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 svg{
   color: #f5f5f5;
+}
+
+/* ----------------------------------------------------------------------------------------------------*/
+/* Footer */
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* footer positioning */
+.footer{
+  /* margin: 10px; */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  padding: 8px;
+  background-color:#974b32;
+  border: 2px solid #161c2e;
+}
+
+/* copyright info */
+.copyright{
+  left: 0px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+.contactInfo{
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+/* footer social media links */
+.column {
+  text-align: center;
+  display: inline;
+  /* width: auto; */
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;   
+}
+
+.row{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.followUs{
+  text-align: center;
+  margin: 0px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
 }
