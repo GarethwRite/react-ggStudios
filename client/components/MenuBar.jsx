@@ -5,21 +5,27 @@ import * as AiIcons from 'react-icons/ai'
 import { MenuBarData } from './MenuBarData'
 import { IconContext } from 'react-icons'
 
-function MenuBar() {
-  // class MenuBar extends React.Component {
-  const [sidebar, setSidebar] = useState(false)
+// function MenuBar() {
+  class MenuBar extends React.Component {
+    state = {
+      sidebar: false
+    }
+  // const [sidebar, setSidebar] = useState(false)
 
-  const showSidebar = () => setSidebar(!sidebar)
+  // showSidebar = () => setSidebar(!sidebar)
+  showSidebar = () => this.setState({
+    sidebar: !this.state.sidebar
+  })
 
-  // render() {
+  render() {
   return (
     <IconContext.Provider value={{ color: '#fff' }}>
       <div className='navbar'>
-        <Link to='/' className='menu-bars'>
-          <FaIcons.FaBars onClick={showSidebar} />
+        <Link to='#' className='menu-bars'>
+          <FaIcons.FaBars onClick={this.showSidebar} />
         </Link>
-        <div className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar} >
+        <div className={this.state.sidebar ? 'nav-menu active' : 'nav-menu'}>
+          <ul className='nav-menu-items' onClick={this.showSidebar} >
             <li className='navbar-toggle'>
               <Link to='/' className="menu-bars" >
                 <AiIcons.AiOutlineClose />
@@ -41,5 +47,6 @@ function MenuBar() {
     </IconContext.Provider>
 
   )
+          }
 }
 export default MenuBar
