@@ -53,6 +53,7 @@ body{
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  color: #f5f5f5;
 }
 
 .welcome {
@@ -310,4 +311,22 @@ svg{
   margin: 0px;
   font-family: 'Orbitron', sans-serif;
   color: white;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/* Forum page */
+/*------------------------------------------------------------------------------------------------*/
+
+.theCompDiv{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+
+}
+
+.tweets {
+  width: auto;
+  height: auto;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+
 }
