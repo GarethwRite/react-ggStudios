@@ -25,7 +25,7 @@ class Footer extends React.Component {
             </a>
           </div>
         </div>
-          <p class="contactInfo">Contact info:<br></br>email: GGStudios@gmail.com</p>
+          <p class="contactInfo">Contact info:<br></br>GGStudios@gmail.com</p>
           <p class="copyright">Ⓒ Copyright 2020<br></br>All rights reserved</p>
       </div>
     )

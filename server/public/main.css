@@ -1,5 +1,5 @@
 html{
- 
+ min-height: fit-content;
   background-color: black;
   position: relative;
   
@@ -31,6 +31,14 @@ body{
   margin-bottom: 20vh;
   z-index: 0;
   
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@media screen and (min-width:320px) and (max-width:736px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -74,36 +82,12 @@ body{
 
 .flex{
   display: flex;
+  flex-direction: row;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 1%;
   
-}
-
-.adContainer{
-  border: 8px solid #161c2e;
-  padding: 0;
-  display: flex;
-  margin: 50px;
-  margin-bottom: 0;
-}
-
-.adContainer2{
-  border: 8px solid #161c2e;
-  padding: 0;
-  display: flex;
-  margin: 50px;
-  margin-bottom: 0;
-}
-
-.adContainer3{
-
-  border: 8px solid #161c2e;
-  padding: 0;
-  display: flex;
-  margin: 50px;
-  margin-bottom: 0;
 }
 
 .AppAds {
@@ -111,6 +95,8 @@ body{
   width: 300px;
   padding: 0;
   margin: 0;
+  align-items: center;
+  border: 5px solid #161c2e;
 }
 
 .flex1{
@@ -124,10 +110,16 @@ body{
   font-family:'Orbitron', sans-serif; 
   color: white;
   text-align: center;
-  width: 316px;
-  border:8px solid #161c2e; 
-  display: flex;
-  margin: 0 50px 50px 50px;
+  width: auto;
+  padding: 5px;
+
+}
+
+.adContainerUl{
+  margin: 1%;
+  padding: 15px;
+  text-align: center;
+  border: none;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -141,21 +133,95 @@ body{
     margin: 30px;
     width: 205px;
     position: relative;
-    z-index: 1;
+   
   }
 
   .formLabel{
     font-family:'Orbitron', sans-serif; 
     color: white;
     position: relative;
-    z-index: 1;
+   
   }
 
 .formDiv{
   margin: 20px;
   position: absolute;
-  z-index: 1;
+
 }
+
+/*------------------------------------------------------------------------------------------------*/
+/* Forum page */
+/*------------------------------------------------------------------------------------------------*/
+
+.tweetMainContainer{
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin-top: 0.5%;
+  margin-bottom: 1.5%;
+ 
+
+  /* position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin-top: 1%; */
+  
+}
+
+.tweetdata1{
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  width: 25%;
+  height: auto;
+  background-color: #161c2e6b;
+  border: 3px solid #974b32;
+  margin: 5px;
+
+}
+
+.tweetdata2{
+  display: flex;
+  width: auto;
+  height: auto;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  width: 25%;
+  height: auto;
+  background-color: #161c2e6b;
+  border: 3px solid #974b32;
+  margin: 5px;
+}
+
+.tweetdata3{
+  display: flex;
+  width: auto;
+  height: auto;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  width: 25%;
+  height: auto;
+  background-color: #161c2e6b;
+  border: 3px solid #974b32;
+  margin: 5px;
+}
+
+.tweets{
+  list-style-type: none;
+  margin: 5px;
+  border: 2px solid  #974b32;
+  width: fit-content;
+}
+
 
 /*-----------------------------------------------------------------*/
 /* react Menu Bar */
@@ -255,16 +321,29 @@ svg{
 /* footer positioning */
 .footer{
   /* margin: 10px; */
-  position: absolute;
-  bottom: 0px;
+  position: -webkit-sticky;
+  bottom: 0vh;
   left: 0px;
   right: 0px;
   height: auto;
   padding: 8px;
   background-color:#974b32;
-  border: 2px solid #161c2e;
+  /* border: 2px solid #161c2e; */
+ 
 }
 
+.footerHome{
+  /* margin: 10px; */
+  position: absolute;
+  bottom: 0vh;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  padding: 8px;
+  background-color:#974b32;
+  /* border: 2px solid #161c2e; */
+
+}
 /* copyright info */
 .copyright{
   left: 0px;
@@ -313,20 +392,3 @@ svg{
   color: white;
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/* Forum page */
-/*------------------------------------------------------------------------------------------------*/
-
-.theCompDiv{
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-
-}
-
-.tweets {
-  width: auto;
-  height: auto;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-
-}

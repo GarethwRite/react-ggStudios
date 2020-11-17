@@ -28,8 +28,10 @@ const App = () => {
         <Route path='/store' component={Store} />
         <Route path='/about' component={About} />
         </Switch>
-        <Footer />
       </Router>
+      {/* <div>
+      <Footer />
+      </div> */}
     </div>
   )
 }

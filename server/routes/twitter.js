@@ -1,14 +1,14 @@
 const request = require('superagent')
 const express = require('express')
-const { response } = require('../server')
+// const {serverURL} = require('./server')
 
 const router = express.Router()
 
 
-const serverURL = 'https://api.twitter.com/1.1/statuses/home_timeline.json'
-const recentCDPRURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=CDPROJEKTRED&count=20'
-const recentBethesdaURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BethesdaStudios&count=20'
-const recentEAURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=EA&count=20'
+// const serverURL = 'https://api.twitter.com/1.1/statuses/home_timeline.json'
+const recentCDPRURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=CDPROJEKTRED&count=5'
+const recentBethesdaURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BethesdaStudios&count=5'
+const recentEAURL = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=EA&count=5'
 
 
 const apiKey = 'TAxjpnbXhep19vE4xLZvNfJ6z'

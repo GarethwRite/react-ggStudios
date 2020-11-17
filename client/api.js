@@ -2,18 +2,18 @@ import request from 'superagent'
 
 export function CDPRTweets(){
   return request
-    .get('/api/v1/twiter/CDPR')
+    .get('/api/twitter/CDPR')
     .then(res => res.body)
 }
 
 export function EATweets(){
   return request
-    .get('/api/v1/twiter/EA')
+    .get('/api/twitter/EA')
     .then(res => res.body)
 }
 
 export function BethesdaTweets(){
   return request
-    .get('/api/v1/twiter/')
+    .get('/api/twitter/Bethesda')
     .then(res => res.body)
 }
