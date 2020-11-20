@@ -64,7 +64,7 @@ class Forum extends React.Component {
         <h3 className='welcome'>See what our competitiors are upto</h3>
         <div className='tweetMainContainer'>
 
-        <div className='tweetdata1'>
+        <div className='tweetdata'>
           <ul className='tweetContainer'>
           <h3>CD Projekt Red</h3>
             {this.state.CDPRData.map((tweet, i) => {
@@ -73,7 +73,7 @@ class Forum extends React.Component {
           </ul>
         </div>
 
-        <div className='tweetdata2'>
+        <div className='tweetdata'>
           <ul className='tweetContainer'>
           <h3>EA Games</h3>
             {this.state.EAData.map((tweet, i) => {
@@ -82,7 +82,7 @@ class Forum extends React.Component {
           </ul>
         </div>
 
-        <div className='tweetdata3'>
+        <div className='tweetdata'>
           <ul className='tweetContainer'>
           <h3>Bethesda Studios</h3>
             {this.state.BethesdaData.map((tweet, i) => {

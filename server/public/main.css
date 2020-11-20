@@ -84,7 +84,6 @@ body{
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: center;
   margin-top: 1%;
   
@@ -120,6 +119,8 @@ body{
   padding: 15px;
   text-align: center;
   border: none;
+  width: 100%;
+  max-width: 300px;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -175,51 +176,28 @@ body{
   
 }
 
-.tweetdata1{
+.tweetdata{
   display: inline-flex;
   width: auto;
   height: auto;
   font-family: 'Orbitron', sans-serif;
   color: white;
-  width: 25%;
   height: auto;
   background-color: #161c2e6b;
   border: 3px solid #974b32;
   margin: 5px;
-
+  
 }
-
-.tweetdata2{
-  display: flex;
-  width: auto;
-  height: auto;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  width: 25%;
-  height: auto;
-  background-color: #161c2e6b;
-  border: 3px solid #974b32;
-  margin: 5px;
-}
-
-.tweetdata3{
-  display: flex;
-  width: auto;
-  height: auto;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  width: 25%;
-  height: auto;
-  background-color: #161c2e6b;
-  border: 3px solid #974b32;
-  margin: 5px;
+@media all and (min-width: 1024px) {
+  .tweetdata{
+    width: 25%;
+  }
 }
 
 .tweets{
   list-style-type: none;
   margin: 5px;
   border: 2px solid  #974b32;
-  width: fit-content;
 }
 
 
